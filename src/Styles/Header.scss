@@ -1,0 +1,32 @@
+@media (max-width: 500px) {
+  .offcanvas{
+
+    & .nav-link{
+      color: #3D4B5D;
+      margin-top: 20px;
+      font-size: 20px;
+    }
+    & .nav-item{
+      & .dropdown-menu{
+        border: 0px;
+        & .dropdown-item{
+          margin-top: 10px;
+        }
+      }
+    }
+    & .search-nav {
+      & ul{
+        position: fixed;
+        bottom: 10px;
+        margin-left: 0px;
+        padding-left: 0px;
+      }
+      & li{
+        padding-left: 0px;
+      }
+      & li:first-child{
+        display: none;
+      }
+    }
+  }
+}

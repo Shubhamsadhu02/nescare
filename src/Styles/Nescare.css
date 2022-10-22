@@ -1,0 +1,414 @@
+@import url('https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,300;0,400;0,500;0,600;0,800;1,900&family=Prompt:wght@200;400;500;600;700;800&display=swap');
+
+*
+{
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    max-width: 100%;
+}
+
+body, html{
+    overflow-x: hidden;
+}
+
+a:link
+{
+    text-decoration: none;
+}
+
+li
+{
+    list-style: none;
+}
+
+.mt-15
+{
+    margin-top: 8rem;
+}
+.mb-15
+{
+    margin-bottom: 8rem;
+}
+
+input:focus,
+textarea:focus
+{
+    outline: none;
+}
+
+nav
+{
+    position: fixed;
+    width: 100%;
+    height: 75px;
+    background: #FFFFFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu ul,
+.search-nav ul
+{
+    display: flex;
+    margin-bottom: 0;
+    align-items: center;
+}
+
+.menu ul li,
+.search-nav ul li
+{
+    padding: 0 16px;
+}
+
+.search-nav ul li i
+{
+    width: 24px;
+    height: 24px;
+}
+
+.search-nav ul li button
+{
+    background: #0060BE;
+    border-radius: 4px;
+    border: none;
+    color: #FFFFFF;
+    padding: 12px 20px;
+    font-family: 'Prompt', sans-serif;
+}
+
+.contact-nav button,
+.donate-btn button
+{
+    background: #24C6AF;
+    border: none;
+    border-radius: 4px;
+    padding: 12px 20px;
+
+
+    font-family: 'Prompt';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 21px;
+    color: #FFFFFF;
+}
+
+.nescare-top__section
+{
+    padding-right: 4rem;
+}
+
+.menu ul li a
+{
+    font-family: 'Epilogue', sans-serif;
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 14px;
+    color: #595858;
+
+    display: flex;
+    align-items: center;
+}
+
+.menu-list i
+{
+    font-size: 20px;
+    padding-left: 5px;
+}
+
+.menu .menu-list li:hover i
+{
+    transform: rotateX(180deg);
+    padding-left: 5px;
+}
+
+
+.dropdown .dropbtn {
+  font-size: 16px;  
+  border: none;
+  outline: none;
+  color: #595858;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+  border-radius: 15px;
+}
+
+.dropdown:hover .dropbtn {
+  background-color: #0060BE;
+  color: #FFFFFF;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  border-radius: 6px;
+}
+
+.menu-list .dropdown .dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block !important;
+  text-align: left;
+  line-height: 20px;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+  border-radius: 6px;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown:hover .dropdown-content .sub-dropdown-content{
+    display: none;
+}
+
+
+.sub-dropdown-content
+{
+    position: absolute;
+    display: none;
+    left: 100%;
+    top: 10%;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    border-radius: 6px;
+}
+
+.sub-dropdown-content a:hover {
+    background-color: #ddd;
+    border-radius: 6px;
+}
+  
+.dropdown .dropdown-content a:hover .sub-dropdown-content{
+    display: block;
+}
+
+.menu .menu-list li .dropdown-content:hover i
+{
+    transform: rotateX(180deg);
+    padding-left: 5px;
+}
+
+.nescare-heading h1
+{
+    font-family: 'Prompt';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 130%;
+    color: #FFFFFF;
+}
+
+.nescare-paragraph p,
+.ways-paragraph p,
+.terms-paragrapgh p
+{
+    font-family: 'Epilogue';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    color: #FFFFFF;
+}
+
+.ways-heading h1,
+.terms-subheading  h3
+{
+    font-family: 'Prompt';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 130%;
+    color: #FFFFFF;
+}
+.terms-paragrapgh p
+{
+    margin-top: 6rem;
+}
+
+.ways-tag img
+{
+    width: 80px;
+    height: 80px;
+}
+
+.ways-topic h3,
+.termsdate h3
+{
+    font-family: 'Prompt';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 130%;
+    color: #FFFFFF;
+}
+
+.ways-paragraph p
+{
+    width: 247px;
+}
+
+.ways-learn-more a
+{
+    font-family: 'Prompt';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    color: #0060BE !important;
+}
+
+.ways-learn-more a i
+{
+    padding-left: 1rem;
+}
+
+.donate-btn button
+{
+    background: #24C6AF;
+    border: none;
+    border-radius: 4px;
+    padding: 12px 20px;
+
+
+    font-family: 'Prompt';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 21px;
+    color: #FFFFFF;
+}
+
+.copyright
+{
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding: 60px 0px;
+}
+
+.copyright .rights h5,
+.copyright .terms h5
+{
+    font-family: 'Prompt';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 140%;
+    color: #737171;
+}
+
+.copyrights p
+{
+    font-family: 'Epilogue';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 140%;
+    color: #FFFFFF;
+}
+
+.nescare-container
+{
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.search-nav .carbon-cal__btn
+{
+    padding: 12px 20px;
+    background: #24C6AF;
+    border: none;
+    border-radius: 4px;
+
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 21px;
+}
+
+.search-nav .contact-btn
+{
+    padding: 12px 20px;
+    border: 1px solid #24C6AF;
+    border-radius: 4px;
+    background: none;
+
+    color: #24C6AF;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 21px;
+}
+
+@media (max-width: 500px){
+    .mt-15 {
+        margin-top: 4rem !important;
+    }
+    .mb-15 {
+        margin-bottom: 6rem !important;
+    }
+    .mb-10 {
+        margin-bottom: 4rem;
+    }
+    .row
+    {
+        margin-left: 0!important;
+    }
+
+    .nescare-top__section
+    {
+        padding-right: 0rem;
+    }
+
+    .nescare-container
+    {
+        padding-top: 2rem;
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+
+    .ways-topic
+    {
+        margin-top: 2rem!important;
+    }
+
+    .ways-paragraph p
+    {
+        width: 100%;
+    }
+
+    .ways-tag img {
+        width: 50px;
+        height: 50px;
+    }
+
+    .nescare-heading h1
+    {
+        font-size: 22px;
+    }
+    .nescare-paragraph p, .ways-paragraph p, .terms-paragrapgh p
+    {
+        font-size: 14px;
+    }
+
+    .offcanvas .search-nav li:first-child
+    {
+        display: block;
+    }
+}
