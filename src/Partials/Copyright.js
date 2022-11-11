@@ -10,7 +10,7 @@ export default function Copyright() {
                     <h5>Copyright © {new Date().getFullYear()} NES Global Solutions Pvt Ltd.</h5>
                 </div>
                 <div className="terms">
-                    <a href='/terms'><h5>Terms of Use / Privacy Policy</h5></a>
+                    <a href='https://nesglobal.in/terms'><h5>Terms of Use / Privacy Policy</h5></a>
                 </div>
             </div>
         </div>
