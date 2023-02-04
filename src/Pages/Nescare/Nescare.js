@@ -5,7 +5,7 @@ import Header from '../../Partials/Header'
 
 export default function nescare() {
   return (
-    <>
+    <div>
     <Header showNav={false} ContactNav={true} />
 
     <section  style={{background: "#10243E"}}>
@@ -123,6 +123,6 @@ export default function nescare() {
     </section>
 
     <Copyright/>
-    </>
+    </div>
   )
 }

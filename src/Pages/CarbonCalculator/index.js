@@ -1,6 +1,5 @@
 import { React, Fragment, useState } from 'react'
 import Header from '../../Partials/Header'
-import Footer from '../../Partials/Footer'
 import { Typeahead, AsyncTypeahead } from 'react-bootstrap-typeahead';
 import { Form, Spinner } from 'react-bootstrap';
 import { ReactComponent as Ship } from './ship.svg'
@@ -11,6 +10,7 @@ import {getOptions} from '../../Helpers/SearouteApi'
 
 import 'react-bootstrap-typeahead/css/Typeahead.css';
 import "../../Styles/CarbonCalculator.scss"
+import Copyright from '../../Partials/Copyright';
 
 export default function CarbonCalculator() {
     const [co2, setCo2] = useState(null);
@@ -226,7 +226,7 @@ export default function CarbonCalculator() {
 
                 </div>
             </section>
-            <Footer />
+            <Copyright />
         </>
     )
 }
