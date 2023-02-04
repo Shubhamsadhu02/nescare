@@ -1,12 +1,13 @@
 import { React, Fragment, useState } from 'react'
 import Header from '../../Partials/Header'
-
+import Footer from '../../Partials/Footer'
 import { Typeahead, AsyncTypeahead } from 'react-bootstrap-typeahead';
 import { Form, Spinner } from 'react-bootstrap';
 import { ReactComponent as Ship } from './ship.svg'
 import { ReactComponent as Plane } from './plane.svg'
 import { ReactComponent as Truck } from './truck.svg'
 import { ReactComponent as Rail } from './rail.svg'
+import {getOptions} from '../../Helpers/SearouteApi'
 
 import 'react-bootstrap-typeahead/css/Typeahead.css';
 import "../../Styles/CarbonCalculator.scss"
@@ -24,43 +25,47 @@ export default function CarbonCalculator() {
 
     const locationSearch = async (query) => {
         setIsLoading(true);
-        let response = await fetch(`https://atorvis.com/ceva_proxy/location.php?mode=${transport}&query=${query}`);
+        let response = await fetch('https://api.searoutes.com/geocoding/v2/port/'+query, getOptions);
         if (response.status == 200) {
-            let res = await response.json();
-            let body = JSON.parse(res);
-            console.log(body);
-            var _locations = body.features
-            const options = _locations.map((e) => ({
-                name: e.properties.name,
-                locode: e.properties.locode,
-            }));
-            setOptions(options);
+            let body = await response.json();
+            let features = body.features;
+            var _locations = features;
+            const options = _locations.map((e) => (
+                {
+                    name: e.properties.name,
+                    locode: e.properties.locode,
+                }
+            ));
+            await setOptions(options);
             setIsLoading(false);
         }
+        
     };
 
-    const getCarbonCalculation = async (quantity, transport) => {
-        if (origin != null && destination != null) {
+    const getCarbonCalculation = async (quantity) => {
+        if (origin != null && destination != null && transport != null) {
             setIsSearching(true);
-            const url = `https://atorvis.com/ceva_proxy/calculate.php?from=${origin}&to=${destination}&quantity=${quantity}&mode=${transport}`
-            let response = await fetch(url);
-            if (response.status == 200) {
-                let res = await response.json();
-                let body = JSON.parse(res);
-                console.log(body);
-                if (body.error != undefined) {
+            const url = `https://api.searoutes.com/co2/v2/direct/${transport}?fromLocode=${origin}&toLocode=${destination}&allowIceAreas=false&avoidHRA=false&avoidSeca=false&nContainers=1`
+            try{
+                let response = await fetch(url, getOptions);
+                let body = await response.json();
+                if (response.status == 200) {
+                    console.log(body);
+                    let co2 = body.co2e;
+                    setCo2(co2.total);
+                    
+                }else{
                     console.log(body.error);
                     console.log(body.messages);
                     setErrorMessage(body.messages);
-                } else {
-                    let co2 = body.co2e;
-                    setCo2(co2.total);
                 }
-
                 setIsSearching(false);
+            }catch(e){
+
             }
+            
         } else {
-            alert("Please select Origin & Destination");
+            alert(`Please select ${origin!=null ? 'Origin':''} ${destination!=null?'Destination':''} ${transport!=null?'Transport':''}`);
         }
     }
 
@@ -69,13 +74,10 @@ export default function CarbonCalculator() {
         var form = e.target;
         const unit = form.unit.value;
         let quantity = form.quantity.value;
-        const transport = form.transport.value;
         if (unit == 'tons') {
             quantity = quantity / 10;
         }
-        console.log(origin);
-        console.log(destination);
-        getCarbonCalculation(quantity, transport);
+        getCarbonCalculation(quantity);
         return false;
     }
 
@@ -117,7 +119,7 @@ export default function CarbonCalculator() {
                             <div className="col-md-10 transporation-container">
                                 <input type="radio" name="transport" id='ship' value="port" />
                                 <div className='transportation-select'>
-                                    <label htmlFor="ship" onClick={() => setTransport('port')}>
+                                    <label htmlFor="ship" onClick={() => setTransport('sea')}>
                                         <span className='transportation-select-image'>
                                             <svg className='transportation-select-image--img'>
                                                 <Ship fill='' />
@@ -130,7 +132,7 @@ export default function CarbonCalculator() {
                                 </div>
                                 <input type="radio" name="transport" id="air" value="airport" />
                                 <div className='transportation-select'>
-                                    <label htmlFor="air" onClick={() => setTransport('airport')}>
+                                    <label htmlFor="air" onClick={() => setTransport('air')}>
                                         <span className='transportation-select-image'>
                                             <svg className='transportation-select-image--img'>
                                                 <Plane fill='' />
@@ -157,7 +159,7 @@ export default function CarbonCalculator() {
                                 </div>
                                 <input type="radio" name="transport" id='rail' value="railTerminal" />
                                 <div className='transportation-select'>
-                                    <label htmlFor="rail" onClick={() => setTransport('railTerminal')}>
+                                    <label htmlFor="rail" onClick={() => setTransport('rail')}>
                                         <span className='transportation-select-image'>
                                             <svg className='transportation-select-image--img'>
                                                 <Rail fill='' />
@@ -184,11 +186,9 @@ export default function CarbonCalculator() {
                                     onSearch={locationSearch}
                                     options={options}
                                     placeholder="Origin"
-                                    renderMenuItemChildren={(option, props) => (
-                                        <Fragment>
-                                            <span onClick={() => setOrigin(option.locode)}>{option.name}</span>
-                                        </Fragment>
-                                    )}
+                                    renderMenuItemChildren={function(option, props) {
+                                        return (<span className="location-searh-results" onClick={function (){setOrigin(option.locode);}}>{option.name}</span>);
+                                    }}
                                 />
                             </div>
                             <div className="col-md-5 position-relative">
@@ -201,9 +201,7 @@ export default function CarbonCalculator() {
                                     options={options}
                                     placeholder="Destination"
                                     renderMenuItemChildren={(option, props) => (
-                                        <Fragment>
-                                            <span onClick={() => { setDestination(option.locode) }}>{option.name}</span>
-                                        </Fragment>
+                                        <span className="location-searh-results" onClick={() => { setDestination(option.locode) }}>{option.name}</span>
                                     )}
                                 />
                             </div>
@@ -220,7 +218,7 @@ export default function CarbonCalculator() {
                         </div>
                     </form>
                     {errorMessage != null?
-                    <div class="alert alert-danger mt-5" role="alert">
+                    <div className="alert alert-danger mt-5" role="alert">
                         <ul className='errors mb-0'>
                             {errorMessage.map((ele, index) => <li key={index}>{ele}</li>)}
                         </ul>
@@ -228,6 +226,7 @@ export default function CarbonCalculator() {
 
                 </div>
             </section>
+            <Footer />
         </>
     )
 }

@@ -185,3 +185,25 @@
         border-right-color: transparent;
     }
 }
+
+.rbt-menu > .dropdown-item {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    padding: 0px;
+}
+
+#async-example .location-searh-results{
+    padding: 15px 10px;
+    display: block;
+    position: relative;
+}
+
+#async-example .location-searh-results::after{
+    position: absolute;
+    content: '';
+    bottom: 0px;
+    left: 0px;
+    height: 2px;
+    width: 100%;
+    background-color: #6D7886;
+}
