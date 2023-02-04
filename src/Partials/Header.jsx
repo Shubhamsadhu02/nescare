@@ -177,9 +177,9 @@ export default function header(props) {
                                 :
                                 <div className="d-flex justify-content-end flex-grow-1 search-nav">
                                     <ul>
-                                        {/* <li>
+                                        <li>
                                             <a href='/carboncalculator'><button type='submit' className='carbon-cal__btn' >Carbon Calculator</button></a>
-                                        </li> */}
+                                        </li>
                                         <li>
                                             <a href='https://nesglobal.in/'><button type='submit' className='contact-btn'>Go back</button></a>
                                         </li>
