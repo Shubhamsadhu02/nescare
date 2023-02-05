@@ -8,6 +8,7 @@ import '../Styles/Header.scss';
 export default function header(props) {
     const showNav = props.showNav ?? true;
     const isWhite = props.isWhite ?? false;
+    const ContactNav = props.ContactNav ?? false;
     const menuItems = [
         {
             title: 'Products',
@@ -126,7 +127,7 @@ export default function header(props) {
         <>
             <Navbar key='md' expand='md' variant={isWhite ? 'dark' : 'light'} style={{ background: isWhite ? '#10243E' : '#FFFFFF' }}>
                 <Container>
-                    <Navbar.Brand href="/"><img src={isWhite ? "/images/Home/logowhite1.png" : "/images/Home/nescarelogo.svg"}
+                    <Navbar.Brand href="/"><img src={"/images/Home/nescarelogo.svg"}
                         height={20} width={150} alt="Brand logo" /></Navbar.Brand>
                     <Navbar.Toggle aria-controls={`offcanvasNavbar-expand-md`} />
                     <Navbar.Offcanvas
@@ -178,7 +179,7 @@ export default function header(props) {
                                 <div className="d-flex justify-content-end flex-grow-1 search-nav">
                                     <ul>
                                         <li>
-                                            <Link to='/carboncalculator'><button type='submit' className='carbon-cal__btn' >Carbon Calculator</button></Link>
+                                            {ContactNav? <Link to='/carboncalculator'><button type='submit' className='carbon-cal__btn' >Carbon Calculator</button></Link>: ""}
                                         </li>
                                         <li>
                                             <Link to='https://nesglobal.in/'><button type='submit' className='contact-btn'>Go back</button></Link>

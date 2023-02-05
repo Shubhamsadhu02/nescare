@@ -84,7 +84,7 @@ export default function CarbonCalculator() {
 
     return (
         <>
-            <Header showNav={true} isWhite={true}/>
+            <Header showNav={false} />
             <section className="banner">
                 <h1>Carbon Footprint Calculator</h1>
                 <h6>Some text goes in here.</h6>
