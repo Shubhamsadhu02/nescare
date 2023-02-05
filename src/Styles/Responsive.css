@@ -225,4 +225,8 @@
     {
         margin-bottom: 20px;
     }
+    .search-nav
+    {
+        display: block !important;
+    }
 }
