@@ -207,3 +207,23 @@
     width: 100%;
     background-color: #6D7886;
 }
+
+@media screen and (max-width: 500px){
+    .banner
+    {
+        background-position: center -72px;
+    }
+    .banner h1
+    {
+        font-size: 30px;
+        text-align: center;
+    }
+    .main-calculator
+    {
+        padding: 0;
+    }
+    .main-calculator .calculator-form .transportation-select-image
+    {
+        padding: 1px;
+    }
+}
