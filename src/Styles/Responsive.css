@@ -216,4 +216,13 @@
     {
         width: 50% !important;
     }
+    .search-nav ul
+    {
+        position: relative !important;
+        display: block;
+    }
+    .search-nav ul li
+    {
+        margin-bottom: 20px;
+    }
 }
