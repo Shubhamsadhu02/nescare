@@ -9,7 +9,7 @@ import { ReactComponent as Rail } from './rail.svg'
 import {getOptions} from '../../Helpers/SearouteApi'
 
 import 'react-bootstrap-typeahead/css/Typeahead.css';
-import "../../Styles/CarbonCalculator.scss"
+import "../../Styles/CarbonCalculator.scss";
 import Copyright from '../../Partials/Copyright';
 
 export default function CarbonCalculator() {

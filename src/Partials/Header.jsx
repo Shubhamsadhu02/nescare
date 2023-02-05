@@ -109,7 +109,7 @@ export default function header(props) {
                         },
                         {
                             title: 'Nescare',
-                            link: '/nescare'
+                            link: '/nescare',
                             // link: 'http://www.nescare.in',
                             // is_absolute: true,
                         },
@@ -126,7 +126,7 @@ export default function header(props) {
         <>
             <Navbar key='md' expand='md' variant={isWhite ? 'dark' : 'light'} style={{ background: isWhite ? '#10243E' : '#FFFFFF' }}>
                 <Container>
-                    <Navbar.Brand href="/"><img src={isWhite ? "/images/Home/logowhite1.png" : "/images/Home/logo.png"}
+                    <Navbar.Brand href="/"><img src={isWhite ? "/images/Home/logowhite1.png" : "/images/Home/nescarelogo.svg"}
                         height={20} width={150} alt="Brand logo" /></Navbar.Brand>
                     <Navbar.Toggle aria-controls={`offcanvasNavbar-expand-md`} />
                     <Navbar.Offcanvas
@@ -170,7 +170,7 @@ export default function header(props) {
                                         </li>
                                         <li>
                                             {/* <a href='https://sam02-kumar02.wistia.com/medias/3n7gwp1ut0?wtime=0s' target={"_blank"}><button type='submit'>Introduction</button></a> */}
-                                            <a href='#'><button type='submit'>Introduction</button></a>
+                                            <Link to='#'><button type='submit'>Introduction</button></Link>
                                         </li>
                                     </ul>
                                 </div>
@@ -178,10 +178,10 @@ export default function header(props) {
                                 <div className="d-flex justify-content-end flex-grow-1 search-nav">
                                     <ul>
                                         <li>
-                                            <a href='/carboncalculator'><button type='submit' className='carbon-cal__btn' >Carbon Calculator</button></a>
+                                            <Link to='/carboncalculator'><button type='submit' className='carbon-cal__btn' >Carbon Calculator</button></Link>
                                         </li>
                                         <li>
-                                            <a href='https://nesglobal.in/'><button type='submit' className='contact-btn'>Go back</button></a>
+                                            <Link to='https://nesglobal.in/'><button type='submit' className='contact-btn'>Go back</button></Link>
                                         </li>
                                     </ul>
                                 </div>
