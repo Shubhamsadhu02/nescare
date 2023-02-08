@@ -79,7 +79,8 @@ nav
 }
 
 .contact-nav button,
-.donate-btn button
+.donate-btn button,
+.calculator--btn button
 {
     background: #24C6AF;
     border: none;
@@ -216,7 +217,8 @@ nav
 
 .nescare-paragraph p,
 .ways-paragraph p,
-.terms-paragrapgh p
+.terms-paragrapgh p,
+.calculator--paragraph p
 {
     font-family: 'Epilogue';
     font-style: normal;
@@ -411,4 +413,13 @@ nav
     {
         display: block;
     }
+}
+
+.calculator--heading h2{
+    font-family: 'Prompt';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 130%;
+    color: #10243E;
 }

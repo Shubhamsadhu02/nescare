@@ -24,7 +24,7 @@ export default function Nescare() {
                         </div>
                     </div>
                     <div className="col-lg-6">
-                        <img src='../images/nescare/nescarehome.png' />
+                        <img src='../images/nescare/nescarehome.png' alt='' />
                     </div>
                 </div>
             </div>
@@ -117,6 +117,29 @@ export default function Nescare() {
                         <div className="ways-learn-more mt-4">
                             <Link to='excess-inventory' style={{color: "#24C6AF"}}>Learn More<i class="far fa-angle-right"></i></Link>
                         </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section className='footprint__calculator' style={{background: "#F0FFFD", padding: "96px 91px 0"}}>
+        <div className="container">
+            <div className="row">
+                <div className="col-sm-12 col-md-6 col-lg-8">
+                    <div className="calculator--heading">
+                        <h2>Carbon Footprint Calculator</h2>
+                    </div>
+                    <div className="calculator--paragraph mt-3">
+                        <p style={{color: "#737171", width: "603px"}}>Estimate an individual or organization's carbon footprint, which is the total amount of greenhouse gas emissions produced from their daily activities</p>
+                    </div>
+                    <div className="calculator--btn mt-3">
+                        <Link to='/carboncalculator'><button type='submit' className='carbon-cal__btn' >Calculate Now</button></Link>
+                    </div>
+                </div>
+                <div className="col-sm-12 col-md-6 col-lg-4">
+                    <div className="calculator--img">
+                        <img src='../images/nescare/footprint.png' alt='' />
                     </div>
                 </div>
             </div>
