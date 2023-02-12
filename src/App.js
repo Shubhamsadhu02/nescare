@@ -13,6 +13,7 @@ import Index from "./Pages/CarbonCalculator/index";
 import ScrollToTop from "./Partials/ScrollToTop";
 import Inventory from "./Pages/Nescare/Inventory";
 import Nescare from "./Pages/Nescare/Nescare";
+import ContactUs from "./Pages/Nescare/ContactUs";
 
 function App() {
   return (
@@ -28,6 +29,7 @@ function App() {
         <Route path="/excess-inventory" element={<ExcessInventory/>}/>
 
         <Route path="/carboncalculator" element={<Index/>}/>
+        <Route path="/contact-us" element={<ContactUs/>}/>
         
       </Routes>
     </Router>

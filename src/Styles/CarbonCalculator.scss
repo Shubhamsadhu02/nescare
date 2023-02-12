@@ -27,6 +27,21 @@
     }
 }
 
+.calculator-header h1
+{
+    font-family: 'Prompt';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 130%;
+    text-align: center;
+    color: #10243E;
+    padding-top: 40px;
+    @media screen and (max-width: 500px){
+        font-size: 30px;
+    }
+}
+
 .main-calculator {
     font-family: 'Epilogue';
     font-style: normal;
@@ -48,6 +63,9 @@
             display: flex;
             justify-content: end;
             align-items: center;
+            @media screen and (max-width: 500px){
+                justify-content: start;
+            }
         }
 
         & .form-label {
@@ -66,7 +84,7 @@
         }
 
         .btn-submit {
-            background: #0060BE;
+            background: #24C6AF;
             width: 100%;
             height: 100%;
             color: #fff;
@@ -76,7 +94,7 @@
 
         & .result-container {
             background-color: #E6EFF9;
-            color: #003A72;
+            color: #24C6AF;
             font-size: 21px;
             display: flex;
             justify-content: center;
@@ -139,10 +157,10 @@
 
             &:checked+.transportation-select {
                 & .transportation-select-image {
-                    border-color: #3380CB;
+                    border-color: #24C6AF;
 
                     &--img {
-                        fill: #3380CB;
+                        fill: #24C6AF;
                     }
                 }
 

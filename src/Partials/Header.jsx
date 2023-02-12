@@ -182,7 +182,7 @@ export default function header(props) {
                                             {ContactNav? <Link to='/carboncalculator'><button type='submit' className='carbon-cal__btn' >Carbon Calculator</button></Link>: ""}
                                         </li>
                                         <li>
-                                            <Link to='https://nesglobal.in/company/contact-us'><button type='submit' className='contact-btn'>Contact us</button></Link>
+                                            <Link to='/contact-us'><button type='submit' className='contact-btn'>Contact us</button></Link>
                                         </li>
                                     </ul>
                                 </div>

@@ -85,9 +85,12 @@ export default function CarbonCalculator() {
     return (
         <>
             <Header showNav={false} />
-            <section className="banner">
+            {/* <section className="banner">
                 <h1>Carbon Footprint Calculator</h1>
                 <h6>Some text goes in here.</h6>
+            </section> */}
+            <section className='calculator-header'>
+                <h1>Carbon Footprint Calculator</h1>
             </section>
             <section className="main-calculator">
                 {isSearching ?
