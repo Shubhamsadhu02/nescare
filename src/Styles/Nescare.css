@@ -548,3 +548,9 @@ nav
     font-weight: 600;
     font-size: 20px;
 }
+
+.footprint__calculator
+{
+    background: #F0FFFD;
+    padding: 96px 91px 0;
+}

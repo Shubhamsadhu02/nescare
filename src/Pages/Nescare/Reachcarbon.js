@@ -85,7 +85,7 @@ export default function reachcarbon() {
                                 <h1 data-aos="fade-up" data-aos-anchor-placement="bottom-bottom" data-aos-offset="-2" data-aos-duration="600" data-aos-easing="linear" style={{color: "#403F3E"}}>Partnering For <span style={{color: "#24C6AF"}}>Industry Change </span></h1>
                             </div>
                             <div className="nescare-paragraph mt-3">
-                                <p data-aos="fade-up" data-aos-anchor-placement="top-center" data-aos-offset="-2" data-aos-duration="70" data-aos-easing="linear" style={{color: "#737171"}}>We’ve committed to carbon removal and drive the Sustainability Program. If you’d like to join us as an environmental partner, get in touch.</p>
+                                <p data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-duration="70" data-aos-easing="linear" style={{color: "#737171"}}>We’ve committed to carbon removal and drive the Sustainability Program. If you’d like to join us as an environmental partner, get in touch.</p>
                             </div>
                         </div>
                     </div>

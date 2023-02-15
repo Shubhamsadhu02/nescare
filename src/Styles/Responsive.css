@@ -246,4 +246,8 @@
         width: 300px;
         height: 200px;
     }
+    .footprint__calculator
+    {
+        padding: 55px 10px 0px;
+    }
 }

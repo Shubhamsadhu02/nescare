@@ -123,9 +123,9 @@ export default function Nescare() {
         </div>
     </section>
 
-    <section className='footprint__calculator' style={{background: "#F0FFFD", padding: "96px 91px 0"}}>
+    <section className='footprint__calculator'>
         <div className="container">
-            <div className="row">
+            <div className="row" style={{rowGap: "25px"}}>
                 <div className="col-sm-12 col-md-6 col-lg-8">
                     <div className="calculator--heading">
                         <h2 data-aos="fade-up" data-aos-offset="-2" data-aos-duration="60" data-aos-easing="linear">Carbon Footprint Calculator</h2>
