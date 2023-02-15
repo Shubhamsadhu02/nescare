@@ -16,10 +16,10 @@ export default function Nescare() {
                     <div className="col-lg-6 d-flex flex-column justify-content-center" >
                         <div className="nescare-top__section">
                             <div className="nescare-heading">
-                                <h1>Delivering the <br/><span style={{color: "#24C6AF"}}>Good'NES</span> to Humanity</h1>
+                                <h1 data-aos="fade-up" data-aos-offset="-2" data-aos-duration="60" data-aos-easing="linear">Delivering the <br/><span style={{color: "#24C6AF"}}>Good'NES</span> to Humanity</h1>
                             </div>
                             <div className="nescare-paragraph mt-3">
-                                <p>NES Global aims at enabling organizations to deliver the global aid and impact to meet their sustainability goals with ease and in an economically efficient way.</p>
+                                <p data-aos="fade-up" data-aos-offset="-2" data-aos-duration="40" data-aos-easing="linear">NES Global aims at enabling organizations to deliver the global aid and impact to meet their sustainability goals with ease and in an economically efficient way.</p>
                             </div>
                         </div>
                     </div>
@@ -41,10 +41,10 @@ export default function Nescare() {
                     <div className="col-lg-6 d-flex flex-column justify-content-center">
                         <div className="nescare-container">
                             <div className="nescare-heading">
-                                <h1 style={{color: "#403F3E"}}>An Easier Way To <span style={{color: "#24C6AF"}}>Do Good</span></h1>
+                                <h1 data-aos="fade-up" data-aos-anchor-placement="bottom-bottom" data-aos-offset="-2" data-aos-duration="600" data-aos-easing="linear" style={{color: "#403F3E"}}>An Easier Way To <span style={{color: "#24C6AF"}}>Do Good</span></h1>
                             </div>
                             <div className="nescare-paragraph mt-3">
-                                <p style={{color: "#737171"}}>With NES you can use our platform for global logistics to deliver aid in a crisis, donate unused goods, and limit carbon emissions—all with more clarity and accountability at every step.</p>
+                                <p data-aos="fade-up" data-aos-anchor-placement="top-center" data-aos-offset="-2" data-aos-duration="70" data-aos-easing="linear" style={{color: "#737171"}}>With NES you can use our platform for global logistics to deliver aid in a crisis, donate unused goods, and limit carbon emissions—all with more clarity and accountability at every step.</p>
                             </div>
                         </div>
                     </div>
@@ -128,10 +128,10 @@ export default function Nescare() {
             <div className="row">
                 <div className="col-sm-12 col-md-6 col-lg-8">
                     <div className="calculator--heading">
-                        <h2>Carbon Footprint Calculator</h2>
+                        <h2 data-aos="fade-up" data-aos-offset="-2" data-aos-duration="60" data-aos-easing="linear">Carbon Footprint Calculator</h2>
                     </div>
                     <div className="calculator--paragraph mt-3">
-                        <p style={{color: "#737171", width: "603px"}}>Estimate an individual or organization's carbon footprint, which is the total amount of greenhouse gas emissions produced from their daily activities</p>
+                        <p data-aos="fade-up" data-aos-offset="-2" data-aos-duration="40" data-aos-easing="linear" style={{color: "#737171", width: "603px"}}>Estimate an individual or organization's carbon footprint, which is the total amount of greenhouse gas emissions produced from their daily activities</p>
                     </div>
                     <div className="calculator--btn mt-3">
                         <Link to='/carboncalculator'><button type='submit' className='carbon-cal__btn' >Calculate Now</button></Link>
