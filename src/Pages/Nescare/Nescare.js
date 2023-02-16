@@ -16,10 +16,10 @@ export default function Nescare() {
                     <div className="col-lg-6 d-flex flex-column justify-content-center" >
                         <div className="nescare-top__section">
                             <div className="nescare-heading">
-                                <h1 data-aos="fade-up" data-aos-offset="-2" data-aos-duration="60" data-aos-easing="linear">Delivering the <br/><span style={{color: "#24C6AF"}}>Good'NES</span> to Humanity</h1>
+                                <h1 data-aos="fade-up" data-aos-duration="60" data-aos-easing="linear">Delivering the <br/><span style={{color: "#24C6AF"}}>Good'NES</span> to Humanity</h1>
                             </div>
                             <div className="nescare-paragraph mt-3">
-                                <p data-aos="fade-up" data-aos-offset="-2" data-aos-duration="40" data-aos-easing="linear">NES Global aims at enabling organizations to deliver the global aid and impact to meet their sustainability goals with ease and in an economically efficient way.</p>
+                                <p data-aos="fade-up" data-aos-duration="40" data-aos-easing="linear">NES Global aims at enabling organizations to deliver the global aid and impact to meet their sustainability goals with ease and in an economically efficient way.</p>
                             </div>
                         </div>
                     </div>
@@ -36,15 +36,15 @@ export default function Nescare() {
             <div className="nescare-item mt-15">
                 <div className="row">
                     <div className="col-lg-6">
-                        <img src='../images/nescare/good.png' />
+                        <img src='../images/nescare/good.png' alt='' />
                     </div>
                     <div className="col-lg-6 d-flex flex-column justify-content-center">
                         <div className="nescare-container">
                             <div className="nescare-heading">
-                                <h1 data-aos="fade-up" data-aos-anchor-placement="bottom-bottom" data-aos-offset="-2" data-aos-duration="600" data-aos-easing="linear" style={{color: "#403F3E"}}>An Easier Way To <span style={{color: "#24C6AF"}}>Do Good</span></h1>
+                                <h1 data-aos="fade-up" data-aos-offset="150" data-aos-duration="60" data-aos-easing="linear" style={{color: "#403F3E"}}>An Easier Way To <span style={{color: "#24C6AF"}}>Do Good</span></h1>
                             </div>
                             <div className="nescare-paragraph mt-3">
-                                <p data-aos="fade-up" data-aos-anchor-placement="top-center" data-aos-offset="-2" data-aos-duration="70" data-aos-easing="linear" style={{color: "#737171"}}>With NES you can use our platform for global logistics to deliver aid in a crisis, donate unused goods, and limit carbon emissions—all with more clarity and accountability at every step.</p>
+                                <p data-aos="fade-up"  data-aos-duration="40" data-aos-easing="linear" style={{color: "#737171"}}>With NES you can use our platform for global logistics to deliver aid in a crisis, donate unused goods, and limit carbon emissions—all with more clarity and accountability at every step.</p>
                             </div>
                         </div>
                     </div>
@@ -63,7 +63,7 @@ export default function Nescare() {
                 <div className="row" style={{rowGap: "60px", marginTop: "5rem"}}>
                     <div className="col-lg-3">
                         <div className="ways-tag">
-                            <img src='../images/nescare/waystag1.png'/>
+                            <img src='../images/nescare/waystag1.png' alt=''/>
                         </div>
                         <div className="ways-topic mt-5">
                             <h3>Reach Carbon Neutrality</h3>
@@ -78,7 +78,7 @@ export default function Nescare() {
                     </div>
                     <div className="col-lg-3">
                         <div className="ways-tag">
-                            <img src='../images/nescare/waystag2.png'/>
+                            <img src='../images/nescare/waystag2.png' alt=''/>
                         </div>
                         <div className="ways-topic mt-5">
                             <h3>Get Discounted and Pro Bono Services</h3>
@@ -92,7 +92,7 @@ export default function Nescare() {
                     </div>
                     <div className="col-lg-3">
                         <div className="ways-tag">
-                            <img src='../images/nescare/waystag3.png'/>
+                            <img src='../images/nescare/waystag3.png' alt=''/>
                         </div>
                         <div className="ways-topic mt-5">
                             <h3>Donate Excess Inventory</h3>
@@ -106,7 +106,7 @@ export default function Nescare() {
                     </div>
                     <div className="col-lg-3">
                         <div className="ways-tag">
-                            <img src='../images/nescare/waystag4.png'/>
+                            <img src='../images/nescare/waystag4.png' alt=''/>
                         </div>
                         <div className="ways-topic mt-5">
                             <h3>Change the Trajectory of Any Crisis</h3>
@@ -128,10 +128,10 @@ export default function Nescare() {
             <div className="row" style={{rowGap: "25px"}}>
                 <div className="col-sm-12 col-md-6 col-lg-8">
                     <div className="calculator--heading">
-                        <h2 data-aos="fade-up" data-aos-offset="-2" data-aos-duration="60" data-aos-easing="linear">Carbon Footprint Calculator</h2>
+                        <h2>Carbon Footprint Calculator</h2>
                     </div>
                     <div className="calculator--paragraph mt-3">
-                        <p data-aos="fade-up" data-aos-offset="-2" data-aos-duration="40" data-aos-easing="linear" style={{color: "#737171", width: "603px"}}>Estimate an individual or organization's carbon footprint, which is the total amount of greenhouse gas emissions produced from their daily activities</p>
+                        <p style={{color: "#737171", width: "603px"}}>Estimate an individual or organization's carbon footprint, which is the total amount of greenhouse gas emissions produced from their daily activities</p>
                     </div>
                     <div className="calculator--btn mt-3">
                         <Link to='/carboncalculator'><button type='submit' className='carbon-cal__btn' >Calculate Now</button></Link>
