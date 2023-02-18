@@ -47,7 +47,7 @@ export default function ExcessInventory() {
                                 <h1 data-aos="fade-up" data-aos-duration="60" data-aos-easing="linear" style={{color: "#403F3E"}}>Bring Essential <span style={{color: "#24C6AF"}}>Nutrition</span> to Families in India</h1>
                             </div>
                             <div className="nescare-paragraph mt-3">
-                                <p data-aos="fade-up" data-aos-duration="40" data-aos-easing="linear" style={{color: "#737171"}}>NESglobal.in teams are working with partners to help lesser privileged individuals and families in India to receive food from disrupted supply chains. Instead of going to waste, quality food ends up on tables.</p>
+                                <p data-aos="fade-up" data-aos-duration="0" data-aos-easing="linear" style={{color: "#737171"}}>NESglobal.in teams are working with partners to help lesser privileged individuals and families in India to receive food from disrupted supply chains. Instead of going to waste, quality food ends up on tables.</p>
                             </div>
                         </div>
                     </div>
