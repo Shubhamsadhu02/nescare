@@ -41,10 +41,10 @@ export default function Nescare() {
                     <div className="col-lg-6 d-flex flex-column justify-content-center">
                         <div className="nescare-container">
                             <div className="nescare-heading">
-                                <h1 data-aos="fade-up" data-aos-offset="150" data-aos-duration="60" data-aos-easing="linear" style={{color: "#403F3E"}}>An Easier Way To <span style={{color: "#24C6AF"}}>Do Good</span></h1>
+                                <h1 data-aos="fade-up" data-aos-offset="150" data-aos-easing="linear" style={{color: "#403F3E"}}>An Easier Way To <span style={{color: "#24C6AF"}}>Do Good</span></h1>
                             </div>
                             <div className="nescare-paragraph mt-3">
-                                <p data-aos="fade-up"  data-aos-duration="40" data-aos-easing="linear" style={{color: "#737171"}}>With NES you can use our platform for global logistics to deliver aid in a crisis, donate unused goods, and limit carbon emissions—all with more clarity and accountability at every step.</p>
+                                <p data-aos="fade-up" data-aos-easing="linear" style={{color: "#737171"}}>With NES you can use our platform for global logistics to deliver aid in a crisis, donate unused goods, and limit carbon emissions—all with more clarity and accountability at every step.</p>
                             </div>
                         </div>
                     </div>

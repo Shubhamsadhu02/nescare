@@ -45,10 +45,10 @@ export default function reachcarbon() {
                     <div className="col-lg-6 d-flex flex-column justify-content-center">
                         <div className="nescare-container">
                             <div className="nescare-heading">
-                                <h1 data-aos="fade-up" data-aos-offset="150" data-aos-duration="60" data-aos-easing="linear" style={{color: "#403F3E"}}>Use Data To <span style={{color: "#24C6AF"}}>Go Lower</span></h1>
+                                <h1 data-aos="fade-up" data-aos-offset="150" data-aos-easing="linear" style={{color: "#403F3E"}}>Use Data To <span style={{color: "#24C6AF"}}>Go Lower</span></h1>
                             </div>
                             <div className="nescare-paragraph mt-3">
-                                <p data-aos="fade-up" data-aos-duration="40" data-aos-easing="linear" style={{color: "#737171"}}>Find the optimal mix of ocean, rail, air, and trucking to lower your carbon impact. NES platform and the NESglobal.in team can analyze your emissions to find the right reductions for your business.</p>
+                                <p data-aos="fade-up" data-aos-easing="linear" style={{color: "#737171"}}>Find the optimal mix of ocean, rail, air, and trucking to lower your carbon impact. NES platform and the NESglobal.in team can analyze your emissions to find the right reductions for your business.</p>
                             </div>
                         </div>
                     </div>
@@ -61,10 +61,10 @@ export default function reachcarbon() {
                     <div className="col-lg-6 d-flex flex-column justify-content-center order-md-1 order-2">
                         <div className="nescare-container">
                             <div className="nescare-heading">
-                                <h1 data-aos="fade-up" data-aos-offset="150" data-aos-duration="60" data-aos-easing="linear" style={{color: "#403F3E"}}>Neutralize <span style={{color: "#24C6AF"}}>the Rest</span></h1>
+                                <h1 data-aos="fade-up" data-aos-offset="150" data-aos-easing="linear" style={{color: "#403F3E"}}>Neutralize <span style={{color: "#24C6AF"}}>the Rest</span></h1>
                             </div>
                             <div className="nescare-paragraph mt-3">
-                                <p data-aos="fade-up" data-aos-duration="70" data-aos-easing="linear" style={{color: "#737171"}}>You can offset up to 100% of your shipping-related emissions for a small fee per shipment. The NESglobal.org Offset Program is an easy, meaningful way to work towards your company’s sustainability goals.</p>
+                                <p data-aos="fade-up" data-aos-easing="linear" style={{color: "#737171"}}>You can offset up to 100% of your shipping-related emissions for a small fee per shipment. The NESglobal.org Offset Program is an easy, meaningful way to work towards your company’s sustainability goals.</p>
                             </div>
                         </div>
                     </div>
@@ -82,10 +82,10 @@ export default function reachcarbon() {
                     <div className="col-lg-6 d-flex flex-column justify-content-center">
                         <div className="nescare-container">
                             <div className="nescare-heading">
-                                <h1 data-aos="fade-up" data-aos-offset="-2" data-aos-duration="60" data-aos-easing="linear" style={{color: "#403F3E"}}>Partnering For <span style={{color: "#24C6AF"}}>Industry Change </span></h1>
+                                <h1 data-aos="fade-up" data-aos-offset="150" data-aos-easing="linear" style={{color: "#403F3E"}}>Partnering For <span style={{color: "#24C6AF"}}>Industry Change </span></h1>
                             </div>
                             <div className="nescare-paragraph mt-3">
-                                <p data-aos="fade-up" data-aos-duration="40" data-aos-easing="linear" style={{color: "#737171"}}>We’ve committed to carbon removal and drive the Sustainability Program. If you’d like to join us as an environmental partner, get in touch.</p>
+                                <p data-aos="fade-up" data-aos-easing="linear" style={{color: "#737171"}}>We’ve committed to carbon removal and drive the Sustainability Program. If you’d like to join us as an environmental partner, get in touch.</p>
                             </div>
                         </div>
                     </div>

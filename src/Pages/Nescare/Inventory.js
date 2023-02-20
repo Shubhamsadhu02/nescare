@@ -45,10 +45,10 @@ export default function Inventory() {
                     <div className="col-lg-6 d-flex flex-column justify-content-center">
                         <div className="nescare-container">
                             <div className="nescare-heading">
-                                <h1 data-aos="fade-up" data-aos-offset="150" data-aos-duration="60" data-aos-easing="linear" style={{color: "#403F3E"}}>Your Platform for <br/><span style={{color: "#24C6AF"}}>How To Help</span></h1>
+                                <h1 data-aos="fade-up" data-aos-offset="150" data-aos-easing="linear" style={{color: "#403F3E"}}>Your Platform for <br/><span style={{color: "#24C6AF"}}>How To Help</span></h1>
                             </div>
                             <div className="nescare-paragraph mt-3">
-                                <p data-aos="fade-up" data-aos-duration="40" data-aos-easing="linear" style={{color: "#737171"}}>How do you help in a crisis? The NES platform, designed to bring visibility and control to global trade, can be your guide. You and your NESglobal.in team can use this technology—without charge—to move donations, see real-time progress, and coordinate with nonprofit partners on the ground.</p>
+                                <p data-aos="fade-up" data-aos-easing="linear" style={{color: "#737171"}}>How do you help in a crisis? The NES platform, designed to bring visibility and control to global trade, can be your guide. You and your NESglobal.in team can use this technology—without charge—to move donations, see real-time progress, and coordinate with nonprofit partners on the ground.</p>
                             </div>
                         </div>
                     </div>
@@ -60,10 +60,10 @@ export default function Inventory() {
                     <div className="col-lg-6 d-flex flex-column justify-content-center order-md-1 order-2">
                         <div className="nescare-container">
                             <div className="nescare-heading">
-                                <h1 data-aos="fade-up" data-aos-offset="150" data-aos-duration="60" data-aos-easing="linear" style={{color: "#403F3E"}}>Get <span style={{color: "#24C6AF"}}>Discounted</span> Shipping and Marketing Support </h1>
+                                <h1 data-aos="fade-up" data-aos-offset="150" data-aos-easing="linear" style={{color: "#403F3E"}}>Get <span style={{color: "#24C6AF"}}>Discounted</span> Shipping and Marketing Support </h1>
                             </div>
                             <div className="nescare-paragraph mt-3">
-                                <p data-aos="fade-up" data-aos-duration="40" data-aos-easing="linear" style={{color: "#737171"}}>When you donate products or supplies through NESglobal.in, you may also get significant discounts on shipping for those shipments. Additionally, we can highlight your donation with press releases, case studies, or other marketing support.</p>
+                                <p data-aos="fade-up" data-aos-easing="linear" style={{color: "#737171"}}>When you donate products or supplies through NESglobal.in, you may also get significant discounts on shipping for those shipments. Additionally, we can highlight your donation with press releases, case studies, or other marketing support.</p>
                             </div>
                         </div>
                     </div>
