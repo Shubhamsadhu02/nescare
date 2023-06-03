@@ -176,7 +176,11 @@ export default function header(props) {
                                     </ul>
                                 </div>
                                 :
-                                <div className="d-flex justify-content-end flex-grow-1 search-nav">
+                                <div className="d-flex justify-content-end flex-grow-1 search-nav align-items-center">
+                                    <div className="nesacre-header">
+                                        <Link to={'https://nesglobal.in/'} target="__blank" style={{ color: isWhite ? "rgba(255,255,255,.55)" : "rgba(0,0,0,.55)" }}>Nesglobal
+                                            <img src='/images/Home/Arrow - Right.svg' height={18} width={18} alt='' style={{ filter: isWhite ? "invert(1)" : "invert(0)" }} /></Link>
+                                    </div>
                                     <ul>
                                         <li>
                                             {ContactNav? <Link to='/carboncalculator'><button type='submit' className='carbon-cal__btn' >Carbon Calculator</button></Link>: ""}
