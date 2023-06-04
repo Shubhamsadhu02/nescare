@@ -250,4 +250,14 @@
     {
         padding: 55px 10px 0px;
     }
+    .nesacre-header
+    {
+        margin-top: 20px;
+    }
+    .nesacre-header a
+    {
+        color: #3D4B5D !important;
+        font-size: 20px !important;
+        padding: 10px .2rem;
+    }
 }
